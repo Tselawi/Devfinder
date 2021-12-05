@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <title>Github - user info</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>Dev Finder</h1>
+            <div><button class="button" type="click" onclick="toggleMode()"><i class="fas fa-moon"></i></div>
+        </nav>
+        <input id="search" class="search" placeholder="Search Github Username" onclick="search()">
+    </header>
+    <section class="user hide">
+        <div class="img-user">
+            <img id="img" alt="github user">
+        </div>
+        <div class="user-details">
+            <h1 id="title"></h1>
+            <p id="subtitle"></p>
+            <p id="desc"></p>
+        </div>
+        <div class="user-join">
+            <p id="date"></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="user-container hide">
+            <div class="hide">
+                <p>Repos</p>
+                <h3 id="repos"></h3>
+            </div>
+            <div class="hide">
+                <p>Followers</p>
+                <h3 id="followers"></h3>
+            </div>
+            <div class="hide">
+                <p>Follwing</p>
+                <h3 id="following"></h3>
+            </div>
+        </div>
+    </section>
+    <section class="address hide">
+        <div>
+            <div class="address_one">
+                <p><i class="fas fa-map-marker-alt"></i> <span id="local"></span> </p>
+                <p><i class="fab fa-twitter"></i> <span id="tweet"></span></p>
+            </div>
+            <div class="address_two">
+                <p><i class="fas fa-link"></i> <span id="linkUrl"></span></p>
+                <p><i class="fas fa-building"></i> <span id="company"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="src/index.js"></script>
+</body>
+
+</html>
